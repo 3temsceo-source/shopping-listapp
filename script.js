@@ -1,8 +1,8 @@
 const supabaseUrl = 'https://ppatcnnpfqutcyvwxycj.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBwYXRjbm5wZnF1dGN5dnd4eWNqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkxOTM4MzUsImV4cCI6MjA5NDc2OTgzNX0.w6Ajd1qhiZ8qy8ElQCl6bnIPWul0qt8-LI32jOvN0go';
-const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 document.addEventListener('DOMContentLoaded', async () => {
+    const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
     const form = document.getElementById('add-form');
     const input = document.getElementById('item-input');
     const list = document.getElementById('shopping-list');

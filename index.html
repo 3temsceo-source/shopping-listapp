@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프리미엄 쇼핑 리스트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.292.0"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Shopping<span class="highlight">List</span></h1>
+            <p>오늘의 구매 계획을 세련되게 관리하세요.</p>
+        </header>
+
+        <main class="app-main">
+            <form id="add-form" class="input-group">
+                <input type="text" id="item-input" placeholder="무엇을 구매할 예정인가요?" autocomplete="off" required>
+                <button type="submit" id="add-btn">
+                    <i data-lucide="plus"></i>
+                </button>
+            </form>
+
+            <ul id="shopping-list" class="list-container">
+                <!-- 아이템이 동적으로 추가됩니다 -->
+            </ul>
+        </main>
+        
+        <footer class="app-footer">
+            <div class="stats">
+                <span id="total-count">0</span> 항목
+            </div>
+            <button id="clear-completed" class="btn-secondary">완료된 항목 삭제</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
